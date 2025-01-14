@@ -19,6 +19,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.random.RandomGenerator;
 
+import static com.teksystem.employee.constants.Applicationconstants.*;
+
 @RestController
 @RequestMapping("employees")
 public class EmployeeController {
@@ -26,9 +28,6 @@ public class EmployeeController {
     @Autowired
     private EmployeeService employeeService;
 
-    private static final String EMPLOYEE_TYPE_MANAGER = "Manager";
-    private static final String EMPLOYEE_TYPE_SALARIED = "Salaried";
-    private static final String EMPLOYEE_TYPE_HOURLY = "Hourly";
     private final Map<Integer, Employee> managers = new HashMap<>();
     private final Map<Integer, Employee> salariedEmployees = new HashMap<>();
     private final Map<Integer, Employee> hourlyEmployees = new HashMap<>();

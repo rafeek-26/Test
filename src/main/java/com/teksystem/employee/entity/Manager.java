@@ -1,7 +1,5 @@
 package com.teksystem.employee.entity;
 
-import org.springframework.stereotype.Component;
-
 public class Manager extends Employee {
      public Manager(int empId){
          super(empId);
